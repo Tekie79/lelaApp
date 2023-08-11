@@ -1,0 +1,24 @@
+.home_additonal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 160px;
+  align-items: center;
+  gap: 40px;
+}
+.small-cards-container {
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+@media screen and (max-width: 1030px){
+  .home_additonal-content{
+    padding: 60px 40px;
+    
+  }
+  .small-cards-container{
+    flex-direction: column;
+  }
+}

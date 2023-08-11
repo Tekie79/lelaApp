@@ -1,0 +1,6 @@
+.not-found{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-size: 70px;
+}

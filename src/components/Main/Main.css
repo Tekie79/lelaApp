@@ -1,0 +1,200 @@
+.main-container {
+  max-width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.headline-container {
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(32, 114, 114); */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  max-width: 100%;
+  padding: 40px 100px;
+  height: 440px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.headline {
+  font-size: 70px;
+  font-weight: 700;
+  /* margin-left: 40px; */
+}
+.sub-headline {
+  width: 50%;
+  margin-top: 26px;
+  font-size: 30px;
+  /* margin-left: 40px; */
+}
+
+/* Services */
+
+.home-service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f7f7f7;
+}
+.home-title,
+.differences h1 {
+  color: #008980;
+  font-weight: 700;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+}
+.home_features {
+  display: flex;
+  width: 100%;
+  padding: 100px 40px 0px 40px;
+  gap: 40px;
+}
+.home_feature-services {
+  width: 50%;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  text-align: center;
+}
+.home_feature-services h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+.home_feature-services i {
+  font-size: 60px;
+  color: #008980;
+}
+
+/* DIFFERENCE */
+.differences {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 60px;
+}
+
+.difference_card {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  padding: 20px 0;
+}
+.diff_description,
+.diff_image-container {
+  width: 50%;
+}
+
+.diff_description {
+  background-color: #e3eeed;
+  padding: 60px;
+  border-radius: 5px;
+}
+.diff_description h2 {
+  color: black;
+  font-size: 42px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.diff_image {
+  width: 95%;
+  border-radius: 100%;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1030px) {
+  .sub-headline {
+    font-size: 25px;
+  }
+  .home_features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_feature-services {
+    width: 100%;
+  }
+  /* diefference section */
+  .difference_card {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .diff_description,
+  .diff_image-container {
+    width: 100%;
+  }
+  .diff_image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .diff_image {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home_features {
+    padding: 60px 10px;
+  }
+  .home-service {
+    padding: 20px 40px;
+  }
+  .differences {
+    padding: 60px 25px;
+  }
+  .diff_description {
+    padding: 60px 25px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .headline-container {
+    padding: 40px 60px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .headline-container {
+    padding: 40px 190px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .sub-headline {
+    width: 90%;
+    font-size: 20px;
+  }
+  .headline {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sub-headline {
+    width: 100%;
+
+    margin-top: 10px;
+  }
+  .headline {
+    font-size: 50px;
+  }
+  .differences h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .headline {
+    font-size: 36px;
+  }
+  .headline-container {
+    padding: 40px 20px;
+  }
+}

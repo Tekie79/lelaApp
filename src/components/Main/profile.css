@@ -1,0 +1,46 @@
+.profile_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 160px;
+  margin: -300px 150px 0px 150px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  z-index: 1;
+}
+.selector_container {
+  display: flex;
+  gap: 10px;
+  margin-top: -20px;
+}
+.circle-solid {
+  width: 20px;
+  height: 20px;
+  background-color: #008980;
+  border: solid 1px #008980;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.circle-regular {
+  width: 20px;
+  height: 20px;
+  border: solid 1px #008980;
+  border-radius: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 1030px) {
+  .profile_container {
+    padding: 20px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .profile_container {
+    padding: 20px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

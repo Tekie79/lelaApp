@@ -1,0 +1,30 @@
+.profile_card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.profile_picture {
+  width: 100px;
+  border-radius: 100%;
+  border: solid 3px #eec76c;
+  padding: 5px;
+}
+.profile_testimony {
+  font-size: 20px;
+  color: #134141;
+  font-style: italic;
+}
+.profile_name {
+  color: rgb(49, 49, 49);
+}
+.profile_department {
+  font-size: 16px;
+}
+@media screen and (max-width: 1030px) {
+  .profile_card {
+    padding: 20px 20px;
+  }
+}

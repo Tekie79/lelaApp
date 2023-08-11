@@ -1,0 +1,11 @@
+.btn_main {
+  padding: 8px 40px;
+  width: 100%;
+  background-color: #e6b84d;
+  border: none;
+  border-radius: 10px;
+  color: black;
+}
+.btn_main:hover {
+  background-color: #cfa134;
+}

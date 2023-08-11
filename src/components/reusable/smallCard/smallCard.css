@@ -1,0 +1,30 @@
+.small_card-container {
+  display: flex;
+  flex-direction: column;
+  color: #008980;
+  background-color: #e3eeed;
+  padding: 60px 40px;
+  width: 250px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+
+.small_card-title {
+  font-weight: 600;
+}
+.small_card-icon {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1110px){
+.small_card-container{
+  width: 220px;
+}
+}
+@media screen and (max-width: 1030px){
+  .small_card-container{
+    width: 100%;
+  }
+}
