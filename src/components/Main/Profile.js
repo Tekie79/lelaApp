@@ -7,10 +7,24 @@ export const Profile = () => {
 
   //
 
-  //handle Selection
-  const handleSelection = (index) => {
-    setSelectedProfile(index);
-  };
+
+  const profileInterval=setInterval(()=>{
+if(selectedProfile < profileData.length-1){
+  setSelectedProfile(selectedProfile + 1)
+}else{
+  setSelectedProfile(selectedProfile - 1)
+}
+  },15000)
+  //
+
+  //
+    //handle Selection
+    const handleSelection = (index) => {
+      clearInterval(profileInterval)
+      setSelectedProfile(index);
+        
+    };
+    //
   const renderProfile = profileData.map((profile) => {
     return <ProfileCard key={profile.id} profile={profile} />;
   });
@@ -18,12 +32,13 @@ export const Profile = () => {
     return (
       <i
         key={profile.id}
+        onClick={() => handleSelection(index)}
         className={
           index === selectedProfile
             ? "circle-solid"
             : "circle-regular"
         }
-        onClick={() => handleSelection(index)}
+       
       ></i>
     );
   });

@@ -5,7 +5,21 @@
   align-items: center;
   gap: 20px;
   text-align: center;
+  /* animation: 15s linear 0s infinite; */
+  
 }
+/* @keyframes card-animate {
+  0% {
+    opacity: 0;
+  }
+  15%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+} */
 .profile_picture {
   width: 100px;
   border-radius: 100%;
